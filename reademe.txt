@@ -1,2 +1,2 @@
 1.截图图片转换文字，自动复制剪切板。
-2.允许keyboardDemo.py
+2.运行keyboardDemo.py
