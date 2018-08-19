@@ -1,0 +1,8 @@
+keyboard
+PIL
+pytesseract
+pythoncom
+pyHook
+requests
+baidu-aip
+pymouse
