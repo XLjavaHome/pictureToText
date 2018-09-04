@@ -14,10 +14,11 @@ def pictrueToText(pictruePath):
     """ 调用通用文字识别, 图片参数为本地图片 """
     texts = client.basicGeneral(image)
     # 字典和列表
-    allText = ''
+    allText = []
     for word in texts['words_result']:
         text = word.get('words', '')
         # 去掉两端空格
+        # 如果allText等于空 前面不要加\n
         if text.strip() != '':
-            allText = allText + "\n" + text
-    return allText
+            allText.append(text);
+    return "\n".join(allText)
