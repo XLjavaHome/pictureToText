@@ -1,2 +1,9 @@
 1.截图图片转换文字，自动复制剪切板。
 2.运行keyboardDemo.py
+pip install keyboard
+pip install PIL
+pip install pytesseract
+pip install pythoncom
+pip install pyHook
+pip install requests
+pip install baidu-aip
