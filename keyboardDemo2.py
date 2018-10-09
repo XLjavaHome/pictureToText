@@ -7,4 +7,4 @@ while True:
         paste = pyperclip.paste()
         result = pinyin.get_initial(paste).replace(' ', '')
         pyperclip.copy(result)
-        # print(result)
+        print(result)

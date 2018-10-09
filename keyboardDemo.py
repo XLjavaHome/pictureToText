@@ -28,5 +28,4 @@ while True:
                 result = baiduAPI.pictrueToText(picturePath)
                 # 将内容复制进剪切板
                 pyperclip.copy(result)
-                # print(result)
-
+                print(result)
