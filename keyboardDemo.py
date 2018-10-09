@@ -8,7 +8,6 @@ import pyperclip
 from PIL import ImageGrab
 
 import baiduAPI
-
 # 一直循环相当于while true
 # for n in range(sys.maxsize):
 while True:
@@ -29,4 +28,5 @@ while True:
                 result = baiduAPI.pictrueToText(picturePath)
                 # 将内容复制进剪切板
                 pyperclip.copy(result)
-                print(result)
+                # print(result)
+
