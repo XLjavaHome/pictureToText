@@ -16,7 +16,7 @@ while True:
     if keyboard.wait('ctrl+alt+a') == None:
         # 截图结束 TODO 监听鼠标左键,目前只搜到python2的
         if keyboard.wait('enter') == None:
-            time.sleep(0.01)
+            time.sleep(0.1)
             im = ImageGrab.grabclipboard()
             picturePath = "1.png"
             if im == None:
