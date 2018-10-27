@@ -14,7 +14,7 @@ while True:
     # 截图开始,不区分大小写
     # 加上没有用or keyboard.wait('shift+alt+a') == None
     if keyboard.wait('ctrl+alt+a') == None:
-        # 截图结束 TODO 监听鼠标左键,目前只搜到python2的
+        # 截图结束
         if keyboard.wait('enter') == None:
             time.sleep(0.1)
             im = ImageGrab.grabclipboard()
