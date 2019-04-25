@@ -6,5 +6,5 @@ while True:
         # 读取剪切板中的文字，并获取每个文字的首字母，复制进剪切板
         paste = pyperclip.paste()
         result = pinyin.get_initial(paste).replace(' ', '')
-        pyperclip.copy(result)
+        pyperclip.copy(result+paste)
         print(result)
