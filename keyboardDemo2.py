@@ -9,8 +9,16 @@ while True:
     if keyboard.wait('ctrl+alt+p') == None:
         # 读取剪切板中的文字，并获取每个文字的首字母，复制进剪切板
         paste = pyperclip.paste()
-        # 以字母开头不用复制
-        if is_Chinese(paste[0]):
-            result = pinyin.get_initial(paste).replace(' ', '')
-            pyperclip.copy(result + paste)
-            print(result)
+        result = ''
+        chinese = ''
+        for everyOne in paste:
+            if is_Chinese(everyOne):
+                chinese += everyOne
+                result += pinyin.get_initial(everyOne).replace(' ', '')
+            else:
+                # 字母的话就累加
+                result += everyOne
+        # 在结尾处将所有的中文都加上
+        result += chinese
+        pyperclip.copy(result)
+        print(result)
