@@ -5,8 +5,10 @@ def is_Chinese(ch):
     if '\u4e00' <= ch <= '\u9fff':
         return True
     return False
+hotkey = 'ctrl+alt+p'
+print(hotkey)
 while True:
-    if keyboard.wait('ctrl+alt+p') == None:
+    if keyboard.wait(hotkey) == None:
         # 读取剪切板中的文字，并获取每个文字的首字母，复制进剪切板
         paste = pyperclip.paste()
         result = ''
